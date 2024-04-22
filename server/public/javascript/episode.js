@@ -2,11 +2,6 @@ console.log('main loaded');
 
 const container = document.querySelector('.containerEp');
 
-//fetch the data
-fetch('')
-  .then(myData => myData.json())
-  .then(myJsonData => showCards(myJsonData));
-
 //function showcard
 function showCards(episodes) {
     console.log(episodes);
