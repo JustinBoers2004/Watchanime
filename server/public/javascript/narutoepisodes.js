@@ -1,5 +1,5 @@
 // Aantal afleveringen
-const numEpisodes = 500; // Voorbeeld: aantal afleveringen is 150
+const numEpisodes = 500; // Voorbeeld: aantal afleveringen is 500
 
 // Functie om knoppen te maken en naar verschillende links te laten linken
 function createButtons() {

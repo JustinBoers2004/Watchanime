@@ -12,7 +12,7 @@
     <title>Naruto</title>
 </head>
 
-<body class="bg-dark m-0 p-0 overflow-x-hidden">
+<body class="bg-dark m-0 p-0">
     <div class="container-fluid bg-dark">
         <div class="row">
             <div class="col">
@@ -24,12 +24,19 @@
             </div>
             <div class="col-5 d-flex flex-direction-row justify-content-center align-items-center fs-6">
                 <a class="nav-link text-white" href="/index.html">Home</a>
-
-                &nbsp;&nbsp;&nbsp;&nbsp;
-                <a class="nav-link text-white" href="/server/public/html/loginregister.html">Login/register</a>
                 &nbsp;&nbsp;&nbsp;&nbsp;
                 <a class="nav-link text-white" href="/html/search.html">Search</a>
                 &nbsp;&nbsp;&nbsp;&nbsp;
+                <div class="dropdown">
+                    <button class="btn btn-secondary bg-dark dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Login en Register
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Login</a></li>
+                        <li><a class="dropdown-item" href="#">Register</a></li>
+                    </ul>
+                </div>
                 <div class="dropdown">
                     <button class="btn btn-secondary bg-dark dropdown-toggle" type="button" data-bs-toggle="dropdown"
                         aria-expanded="false">
