@@ -3,31 +3,27 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/server/public/css/style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
-    <title>Document</title>
+    <title>Naruto</title>
 </head>
 
 <body class="bg-dark m-0 p-0">
     <div class="container-fluid bg-dark">
         <div class="row">
-            <div class="col">
-
-            </div>
+            <div class="col"></div>
             <div class="col-5">
                 <span class="text-danger fs-1">Watch</span>
                 <span class="text-white fs-1">Anime</span>
             </div>
-            <div class="col-5 d-flex flex-direction-row justify-content-center align-items-center fs-6">
-                <a class="nav-link text-white" href="/index.html">Home</a>
-                &nbsp;&nbsp;&nbsp;&nbsp;
-                <a class="nav-link text-white" href="/html/search.html">Search</a>
-                &nbsp;&nbsp;&nbsp;&nbsp;
+            <div class="col-5 d-flex flex-row justify-content-center align-items-center fs-6">
+                <a class="nav-link text-white me-3" href="/index.html">Home</a>
+                <a class="nav-link text-white me-3" href="/html/search.html">Search</a>
                 <div class="dropdown">
                     <button class="btn btn-secondary bg-dark dropdown-toggle" type="button" data-bs-toggle="dropdown"
                         aria-expanded="false">
@@ -53,6 +49,7 @@
             <div class="col"></div>
         </div>
     </div>
+
 
 
 
@@ -112,261 +109,448 @@
 
     <br>
 
-    <div class="container m-5">
+    <div class="container-fluid">
         <div class="row">
-            <div class="col-12 d-flex flex-start text-white">
-                <h1>Most populair</h1>
+            <div class="col-12 text-white text-center">
+                <h1 class="text-white">Most populair</h1>
             </div>
         </div>
     </div>
 
-    <div class="container bg-dark">
-        <div class="row">
-            <div id="carouselExample1" class="carousel carousel-dark slide p-0" data-bs-ride="carousel">
-                <div class="carousel-indicators text-white">
-                    <button type="button" data-bs-target="#carouselExample1" data-bs-slide-to="0" class="active"
-                        aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#carouselExample1" data-bs-slide-to="1"
-                        aria-label="Slide 2"></button>
-                    <button type="button" data-bs-target="#carouselExample1" data-bs-slide-to="2"
-                        aria-label="Slide 3"></button>
+    <div id="carouselExampleControlsOne" class="carousel carousel-dark slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="card-wrapper container-sm d-flex flex-wrap justify-content-between px-3">
+                    <div class="card mb-3 bg-black" style="width: calc(20% - 1rem);">
+                        <a href="LINK NAAR JE PAGINA" class="text-decoration-none">
+                            <img src="https://imgsrv.crunchyroll.com/cdn-cgi/image/format=auto,fit=contain,width=480,height=720,quality=85/catalog/crunchyroll/e108ae17d8d0407417cac40eb52d849a.jpe"
+                                class="card-img-top" alt="...">
+                            <div class="card-body text-center text-white">
+                                <h5 class="card-title">Black clover</h5>
+                                <p>Episode 12</p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="card mb-3 bg-black" style="width: calc(20% - 1rem);">
+                        <a href="LINK NAAR JE PAGINA" class="text-decoration-none">
+                            <img src="https://imgsrv.crunchyroll.com/cdn-cgi/image/format=auto,fit=contain,width=480,height=720,quality=85/catalog/crunchyroll/757bae5a21039bac6ebace5de9affcd8.jpe"
+                                class="card-img-top" alt="...">
+                            <div class="card-body text-center text-white">
+                                <h5 class="card-title">Card title</h5>
+                                <p>Episode</p>
+                            </div>
+                        </a>
+                    </div>
+
+
+                    <div class="card mb-3 bg-black" style="width: calc(20% - 1rem);">
+                        <a href="/server/public/html/naruto.html" class="text-decoration-none">
+                            <img src="https://imgsrv.crunchyroll.com/cdn-cgi/image/format=auto,fit=contain,width=480,height=720,quality=85/catalog/crunchyroll/01ec367b44f0a568430a957e042639af.jpe"
+                                class="card-img-top" alt="...">
+                            <div class="card-body text-center text-white">
+                                <h5 class="card-title">Naruto</h5>
+                                <p>Episode</p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="card mb-3 bg-black" style="width: calc(20% - 1rem);">
+                        <a href="LINK NAAR JE PAGINA" class="text-decoration-none">
+                            <img src="https://imgsrv.crunchyroll.com/cdn-cgi/image/format=auto,fit=contain,width=480,height=720,quality=85/catalog/crunchyroll/e4e80c83c792d81c138e320874dbdffc.jpe"
+                                class="card-img-top" alt="...">
+                            <div class="card-body text-center text-white">
+                                <h5 class="card-title">Card title</h5>
+                                <p>Episode</p>
+                            </div>
+                        </a>
+                    </div>
+
+
+                    <div class="card mb-3 bg-black" style="width: calc(20% - 1rem);">
+                        <a href="LINK NAAR JE PAGINA" class="text-decoration-none">
+                            <img src="https://imgsrv.crunchyroll.com/cdn-cgi/image/format=auto,fit=contain,width=480,height=720,quality=85/catalog/crunchyroll/5e7f533c3b4f46244ca228af62e83dfa.jpe"
+                                class="card-img-top" alt="...">
+                            <div class="card-body text-center text-white">
+                                <h5 class="card-title">Card title</h5>
+                                <p>Episode</p>
+                            </div>
+                        </a>
+                    </div>
+
                 </div>
-                <div class="carousel-inner">
-                    <!-- Dynamically loaded images will go here -->
+            </div>
+            <div class="carousel-item">
+                <div class="card-wrapper container-sm d-flex justify-content-around">
+                    <div class="card mb-3 bg-black" style="width: calc(20% - 1rem);">
+                        <a href="LINK NAAR JE PAGINA" class="text-decoration-none">
+                            <img src="https://imgsrv.crunchyroll.com/cdn-cgi/image/format=auto,fit=contain,width=480,height=720,quality=85/catalog/crunchyroll/e108ae17d8d0407417cac40eb52d849a.jpe"
+                                class="card-img-top" alt="...">
+                            <div class="card-body text-center text-white">
+                                <h5 class="card-title">Black clover</h5>
+                                <p>Episode 12</p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="card mb-3 bg-black" style="width: calc(20% - 1rem);">
+                        <a href="LINK NAAR JE PAGINA" class="text-decoration-none">
+                            <img src="https://imgsrv.crunchyroll.com/cdn-cgi/image/format=auto,fit=contain,width=480,height=720,quality=85/catalog/crunchyroll/757bae5a21039bac6ebace5de9affcd8.jpe"
+                                class="card-img-top" alt="...">
+                            <div class="card-body text-center text-white">
+                                <h5 class="card-title">Card title</h5>
+                                <p>Episode</p>
+                            </div>
+                        </a>
+                    </div>
+
+
+                    <div class="card mb-3 bg-black" style="width: calc(20% - 1rem);">
+                        <a href="LINK NAAR JE PAGINA" class="text-decoration-none">
+                            <img src="https://imgsrv.crunchyroll.com/cdn-cgi/image/format=auto,fit=contain,width=480,height=720,quality=85/catalog/crunchyroll/01ec367b44f0a568430a957e042639af.jpe"
+                                class="card-img-top" alt="...">
+                            <div class="card-body text-center text-white">
+                                <h5 class="card-title">Naruto</h5>
+                                <p>Episode</p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="card mb-3 bg-black" style="width: calc(20% - 1rem);">
+                        <a href="LINK NAAR JE PAGINA" class="text-decoration-none">
+                            <img src="https://imgsrv.crunchyroll.com/cdn-cgi/image/format=auto,fit=contain,width=480,height=720,quality=85/catalog/crunchyroll/e4e80c83c792d81c138e320874dbdffc.jpe"
+                                class="card-img-top" alt="...">
+                            <div class="card-body text-center text-white">
+                                <h5 class="card-title">Card title</h5>
+                                <p>Episode</p>
+                            </div>
+                        </a>
+                    </div>
+
+
+                    <div class="card mb-3 bg-black" style="width: calc(20% - 1rem);">
+                        <a href="LINK NAAR JE PAGINA" class="text-decoration-none">
+                            <img src="https://imgsrv.crunchyroll.com/cdn-cgi/image/format=auto,fit=contain,width=480,height=720,quality=85/catalog/crunchyroll/5e7f533c3b4f46244ca228af62e83dfa.jpe"
+                                class="card-img-top" alt="...">
+                            <div class="card-body text-center text-white">
+                                <h5 class="card-title">Card title</h5>
+                                <p>Episode</p>
+                            </div>
+                        </a>
+                    </div>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample1"
-                    data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample1"
-                    data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
             </div>
         </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsOne"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControlsOne"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
     </div>
 
     <br>
 
-    <div class="container m-5">
-        <div class="row">
-            <div class="col-12 d-flex flex-start text-white">
-                <h1>Horror</h1>
-            </div>
-        </div>
-    </div>
-
     <div class="container-fluid">
         <div class="row">
-            <div id="carouselExample3" class="carousel slide">
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <div class="row">
-                            <div class="col-sm h-100">
-                                <img src="https://imgsrv.crunchyroll.com/cdn-cgi/image/format=auto,fit=contain,width=480,height=720,quality=85/catalog/crunchyroll/e108ae17d8d0407417cac40eb52d849a.jpe"
-                                    class="d-block w-100" alt="...">
-                                <h1 class="text-white text-center fs-5">Black clover</h1>
-                                <p class="text-white text-center">episode's</p>
-                            </div>
-
-                            <div class="col-sm h-100">
-                                <img src="https://imgsrv.crunchyroll.com/cdn-cgi/image/format=auto,fit=contain,width=480,height=720,quality=85/catalog/crunchyroll/757bae5a21039bac6ebace5de9affcd8.jpe"
-                                    class="d-block w-100" alt="...">
-                                <h1 class="text-white text-center fs-5">One piece</h1>
-                                <p class="text-white text-center">episode's</p>
-                            </div>
-                            <div class="col-sm h-100">
-                                <a href="/server/public/html/naruto.html">
-                                    <img src="https://imgsrv.crunchyroll.com/cdn-cgi/image/format=auto,fit=contain,width=480,height=720,quality=85/catalog/crunchyroll/01ec367b44f0a568430a957e042639af.jpe"
-                                        class="d-block w-100" alt="...">
-                                    <h1 class="text-white text-center fs-5">Naruto</h1>
-                                    <p class="text-white text-center">episode's</p>
-                                </a>
-                            </div>
-                            <div class="col-sm h-100">
-                                <img src="https://imgsrv.crunchyroll.com/cdn-cgi/image/format=auto,fit=contain,width=480,height=720,quality=85/catalog/crunchyroll/e4e80c83c792d81c138e320874dbdffc.jpe"
-                                    class="d-block w-100" alt="...">
-                                <h1 class="text-white text-center fs-5">Jujustu Kaisen</h1>
-                                <p class="text-white text-center">episode's</p>
-                            </div>
-                            <div class="col-sm h-100">
-                                <img src="https://imgsrv.crunchyroll.com/cdn-cgi/image/format=auto,fit=contain,width=480,height=720,quality=85/catalog/crunchyroll/98ea4207e23a2ea3e3af39ad641d8800.jpe"
-                                    class="d-block w-100" alt="...">
-                                <h1 class="text-white text-center fs-5">Dragon bal</h1>
-                                <p class="text-white text-center">episode's</p>
-                            </div>
-                            <div class="col-sm h-100">
-                            <a href="/server/public/html/SoloLevelingEpisodes.html">
-                                <img src="https://imgsrv.crunchyroll.com/cdn-cgi/image/format=auto,fit=contain,width=480,height=720,quality=85/catalog/crunchyroll/5e7f533c3b4f46244ca228af62e83dfa.jpe"
-                                    class="d-block w-100" alt="...">
-                                <h1 class="text-white text-center fs-5">Solo leveling</h1>
-                                <p class="text-white text-center">episode's</p>
-                            </a>
-                            </div>
-                            <div class="col-sm h-100">
-                                <img src="https://imgsrv.crunchyroll.com/cdn-cgi/image/format=auto,fit=contain,width=480,height=720,quality=85/catalog/crunchyroll/323c82257b2f6567fabbb7bd55bfa753.jpe"
-                                    class="d-block w-100" alt="...">
-                                <h1 class="text-white text-center fs-5">Attack on titan</h1>
-                                <p class="text-white text-center">episode's</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="row">
-                            <div class="col-sm">
-                                <img src="https://via.placeholder.com/300" class="d-block w-100" alt="...">
-                            </div>
-                            <div class="col-sm">
-                                <img src="https://via.placeholder.com/300" class="d-block w-100" alt="...">
-                            </div>
-                            <div class="col-sm">
-                                <img src="https://via.placeholder.com/300" class="d-block w-100" alt="...">
-                            </div>
-                            <div class="col-sm">
-                                <img src="https://via.placeholder.com/300" class="d-block w-100" alt="...">
-                            </div>
-                            <div class="col-sm">
-                                <img src="https://via.placeholder.com/300" class="d-block w-100" alt="...">
-                            </div>
-                            <div class="col-sm">
-                                <img src="https://via.placeholder.com/300" class="d-block w-100" alt="...">
-                            </div>
-                            <div class="col-sm">
-                                <img src="https://via.placeholder.com/300" class="d-block w-100" alt="...">
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Add more carousel items as needed -->
-                </div>
-                <a class="carousel-control-prev" href="#carouselExample3" role="button" data-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Previous</span>
-                </a>
-                <a class="carousel-control-next" href="#carouselExample3" role="button" data-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Next</span>
-                </a>
+            <div class="col-12 text-white text-center">
+                <h1 class="text-white">Horror</h1>
             </div>
-
-            <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-            <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
-            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
         </div>
     </div>
 
+    <div id="carouselExampleControlsTwo" class="carousel carousel-dark slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="card-wrapper container-sm d-flex flex-wrap justify-content-between px-3">
+                    <div class="card mb-3 bg-black" style="width: calc(20% - 1rem);">
+                        <a href="LINK NAAR JE PAGINA" class="text-decoration-none">
+                            <img src="https://imgsrv.crunchyroll.com/cdn-cgi/image/format=auto,fit=contain,width=480,height=720,quality=85/catalog/crunchyroll/e108ae17d8d0407417cac40eb52d849a.jpe"
+                                class="card-img-top" alt="...">
+                            <div class="card-body text-center text-white">
+                                <h5 class="card-title">Black clover</h5>
+                                <p>Episode 12</p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="card mb-3 bg-black" style="width: calc(20% - 1rem);">
+                        <a href="LINK NAAR JE PAGINA" class="text-decoration-none">
+                            <img src="https://imgsrv.crunchyroll.com/cdn-cgi/image/format=auto,fit=contain,width=480,height=720,quality=85/catalog/crunchyroll/757bae5a21039bac6ebace5de9affcd8.jpe"
+                                class="card-img-top" alt="...">
+                            <div class="card-body text-center text-white">
+                                <h5 class="card-title">Card title</h5>
+                                <p>Episode</p>
+                            </div>
+                        </a>
+                    </div>
+
+
+                    <div class="card mb-3 bg-black" style="width: calc(20% - 1rem);">
+                        <a href="LINK NAAR JE PAGINA" class="text-decoration-none">
+                            <img src="https://imgsrv.crunchyroll.com/cdn-cgi/image/format=auto,fit=contain,width=480,height=720,quality=85/catalog/crunchyroll/01ec367b44f0a568430a957e042639af.jpe"
+                                class="card-img-top" alt="...">
+                            <div class="card-body text-center text-white">
+                                <h5 class="card-title">Naruto</h5>
+                                <p>Episode</p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="card mb-3 bg-black" style="width: calc(20% - 1rem);">
+                        <a href="LINK NAAR JE PAGINA" class="text-decoration-none">
+                            <img src="https://imgsrv.crunchyroll.com/cdn-cgi/image/format=auto,fit=contain,width=480,height=720,quality=85/catalog/crunchyroll/e4e80c83c792d81c138e320874dbdffc.jpe"
+                                class="card-img-top" alt="...">
+                            <div class="card-body text-center text-white">
+                                <h5 class="card-title">Card title</h5>
+                                <p>Episode</p>
+                            </div>
+                        </a>
+                    </div>
+
+
+                    <div class="card mb-3 bg-black" style="width: calc(20% - 1rem);">
+                        <a href="LINK NAAR JE PAGINA" class="text-decoration-none">
+                            <img src="https://imgsrv.crunchyroll.com/cdn-cgi/image/format=auto,fit=contain,width=480,height=720,quality=85/catalog/crunchyroll/5e7f533c3b4f46244ca228af62e83dfa.jpe"
+                                class="card-img-top" alt="...">
+                            <div class="card-body text-center text-white">
+                                <h5 class="card-title">Card title</h5>
+                                <p>Episode</p>
+                            </div>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="card-wrapper container-sm d-flex justify-content-around">
+                    <div class="card mb-3 bg-black" style="width: calc(20% - 1rem);">
+                        <a href="LINK NAAR JE PAGINA" class="text-decoration-none">
+                            <img src="https://imgsrv.crunchyroll.com/cdn-cgi/image/format=auto,fit=contain,width=480,height=720,quality=85/catalog/crunchyroll/e108ae17d8d0407417cac40eb52d849a.jpe"
+                                class="card-img-top" alt="...">
+                            <div class="card-body text-center text-white">
+                                <h5 class="card-title">Black clover</h5>
+                                <p>Episode 12</p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="card mb-3 bg-black" style="width: calc(20% - 1rem);">
+                        <a href="LINK NAAR JE PAGINA" class="text-decoration-none">
+                            <img src="https://imgsrv.crunchyroll.com/cdn-cgi/image/format=auto,fit=contain,width=480,height=720,quality=85/catalog/crunchyroll/757bae5a21039bac6ebace5de9affcd8.jpe"
+                                class="card-img-top" alt="...">
+                            <div class="card-body text-center text-white">
+                                <h5 class="card-title">Card title</h5>
+                                <p>Episode</p>
+                            </div>
+                        </a>
+                    </div>
+
+
+                    <div class="card mb-3 bg-black" style="width: calc(20% - 1rem);">
+                        <a href="LINK NAAR JE PAGINA" class="text-decoration-none">
+                            <img src="https://imgsrv.crunchyroll.com/cdn-cgi/image/format=auto,fit=contain,width=480,height=720,quality=85/catalog/crunchyroll/01ec367b44f0a568430a957e042639af.jpe"
+                                class="card-img-top" alt="...">
+                            <div class="card-body text-center text-white">
+                                <h5 class="card-title">Naruto</h5>
+                                <p>Episode</p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="card mb-3 bg-black" style="width: calc(20% - 1rem);">
+                        <a href="LINK NAAR JE PAGINA" class="text-decoration-none">
+                            <img src="https://imgsrv.crunchyroll.com/cdn-cgi/image/format=auto,fit=contain,width=480,height=720,quality=85/catalog/crunchyroll/e4e80c83c792d81c138e320874dbdffc.jpe"
+                                class="card-img-top" alt="...">
+                            <div class="card-body text-center text-white">
+                                <h5 class="card-title">Card title</h5>
+                                <p>Episode</p>
+                            </div>
+                        </a>
+                    </div>
+
+
+                    <div class="card mb-3 bg-black" style="width: calc(20% - 1rem);">
+                        <a href="LINK NAAR JE PAGINA" class="text-decoration-none">
+                            <img src="https://imgsrv.crunchyroll.com/cdn-cgi/image/format=auto,fit=contain,width=480,height=720,quality=85/catalog/crunchyroll/5e7f533c3b4f46244ca228af62e83dfa.jpe"
+                                class="card-img-top" alt="...">
+                            <div class="card-body text-center text-white">
+                                <h5 class="card-title">Card title</h5>
+                                <p>Episode</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsTwo"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControlsTwo"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
     <br>
 
-    <div class="container m-5">
-        <div class="row">
-            <div class="col-12 d-flex flex-start text-white">
-                <h1>Action</h1>
-            </div>
-        </div>
-    </div>
-
     <div class="container-fluid">
         <div class="row">
-            <div id="carouselExample3" class="carousel slide">
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <div class="row">
-                            <div class="col-sm h-100">
-                                <img src="https://imgsrv.crunchyroll.com/cdn-cgi/image/format=auto,fit=contain,width=480,height=720,quality=85/catalog/crunchyroll/e108ae17d8d0407417cac40eb52d849a.jpe"
-                                    class="d-block w-100" alt="...">
-                                <h1 class="text-white text-center fs-5">Black clover</h1>
-                                <p class="text-white text-center">episode's</p>
-                            </div>
-
-                            <div class="col-sm h-100">
-                                <img src="https://imgsrv.crunchyroll.com/cdn-cgi/image/format=auto,fit=contain,width=480,height=720,quality=85/catalog/crunchyroll/757bae5a21039bac6ebace5de9affcd8.jpe"
-                                    class="d-block w-100" alt="...">
-                                <h1 class="text-white text-center fs-5">One piece</h1>
-                                <p class="text-white text-center">episode's</p>
-                            </div>
-                            <div class="col-sm h-100">
-                                <a href="/server/public/html/naruto.html">
-                                    <img src="https://imgsrv.crunchyroll.com/cdn-cgi/image/format=auto,fit=contain,width=480,height=720,quality=85/catalog/crunchyroll/01ec367b44f0a568430a957e042639af.jpe"
-                                        class="d-block w-100" alt="...">
-                                    <h1 class="text-white text-center fs-5">Naruto</h1>
-                                    <p class="text-white text-center">episode's</p>
-                                </a>
-                            </div>
-                            <div class="col-sm h-100">
-                                <img src="https://imgsrv.crunchyroll.com/cdn-cgi/image/format=auto,fit=contain,width=480,height=720,quality=85/catalog/crunchyroll/e4e80c83c792d81c138e320874dbdffc.jpe"
-                                    class="d-block w-100" alt="...">
-                                <h1 class="text-white text-center fs-5">Jujustu Kaisen</h1>
-                                <p class="text-white text-center">episode's</p>
-                            </div>
-                            <div class="col-sm h-100">
-                                <img src="https://imgsrv.crunchyroll.com/cdn-cgi/image/format=auto,fit=contain,width=480,height=720,quality=85/catalog/crunchyroll/98ea4207e23a2ea3e3af39ad641d8800.jpe"
-                                    class="d-block w-100" alt="...">
-                                <h1 class="text-white text-center fs-5">Dragon bal</h1>
-                                <p class="text-white text-center">episode's</p>
-                            </div>
-                            <div class="col-sm h-100">
-                                <a href="/server/public/html/SoloLevelingEpisodes.html">
-                                    <img src="https://imgsrv.crunchyroll.com/cdn-cgi/image/format=auto,fit=contain,width=480,height=720,quality=85/catalog/crunchyroll/5e7f533c3b4f46244ca228af62e83dfa.jpe"
-                                        class="d-block w-100" alt="...">
-                                    <h1 class="text-white text-center fs-5">Solo leveling</h1>
-                                    <p class="text-white text-center">episode's</p>
-                                </a>
-                            </div>
-                            <div class="col-sm h-100">
-                                <img src="https://imgsrv.crunchyroll.com/cdn-cgi/image/format=auto,fit=contain,width=480,height=720,quality=85/catalog/crunchyroll/323c82257b2f6567fabbb7bd55bfa753.jpe"
-                                    class="d-block w-100" alt="...">
-                                <h1 class="text-white text-center fs-5">Attack on titan</h1>
-                                <p class="text-white text-center">episode's</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="row">
-                            <div class="col-sm">
-                                <img src="https://via.placeholder.com/300" class="d-block w-100" alt="...">
-                            </div>
-                            <div class="col-sm">
-                                <img src="https://via.placeholder.com/300" class="d-block w-100" alt="...">
-                            </div>
-                            <div class="col-sm">
-                                <img src="https://via.placeholder.com/300" class="d-block w-100" alt="...">
-                            </div>
-                            <div class="col-sm">
-                                <img src="https://via.placeholder.com/300" class="d-block w-100" alt="...">
-                            </div>
-                            <div class="col-sm">
-                                <img src="https://via.placeholder.com/300" class="d-block w-100" alt="...">
-                            </div>
-                            <div class="col-sm">
-                                <img src="https://via.placeholder.com/300" class="d-block w-100" alt="...">
-                            </div>
-                            <div class="col-sm">
-                                <img src="https://via.placeholder.com/300" class="d-block w-100" alt="...">
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Add more carousel items as needed -->
-                </div>
-                <a class="carousel-control-prev" href="#carouselExample3" role="button" data-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Previous</span>
-                </a>
-                <a class="carousel-control-next" href="#carouselExample3" role="button" data-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Next</span>
-                </a>
+            <div class="col-12 text-white text-center">
+                <h1 class="text-white">Action</h1>
             </div>
-
-            <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-            <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
-            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
         </div>
     </div>
+
+    <div id="carouselExampleControlsThree" class="carousel carousel-dark slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="card-wrapper container-sm d-flex flex-wrap justify-content-between px-3">
+                    <div class="card mb-3 bg-black" style="width: calc(20% - 1rem);">
+                        <a href="LINK NAAR JE PAGINA" class="text-decoration-none">
+                            <img src="https://imgsrv.crunchyroll.com/cdn-cgi/image/format=auto,fit=contain,width=480,height=720,quality=85/catalog/crunchyroll/e108ae17d8d0407417cac40eb52d849a.jpe"
+                                class="card-img-top" alt="...">
+                            <div class="card-body text-center text-white">
+                                <h5 class="card-title">Black clover</h5>
+                                <p>Episode 12</p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="card mb-3 bg-black" style="width: calc(20% - 1rem);">
+                        <a href="LINK NAAR JE PAGINA" class="text-decoration-none">
+                            <img src="https://imgsrv.crunchyroll.com/cdn-cgi/image/format=auto,fit=contain,width=480,height=720,quality=85/catalog/crunchyroll/757bae5a21039bac6ebace5de9affcd8.jpe"
+                                class="card-img-top" alt="...">
+                            <div class="card-body text-center text-white">
+                                <h5 class="card-title">Card title</h5>
+                                <p>Episode</p>
+                            </div>
+                        </a>
+                    </div>
+
+
+                    <div class="card mb-3 bg-black" style="width: calc(20% - 1rem);">
+                        <a href="LINK NAAR JE PAGINA" class="text-decoration-none">
+                            <img src="https://imgsrv.crunchyroll.com/cdn-cgi/image/format=auto,fit=contain,width=480,height=720,quality=85/catalog/crunchyroll/01ec367b44f0a568430a957e042639af.jpe"
+                                class="card-img-top" alt="...">
+                            <div class="card-body text-center text-white">
+                                <h5 class="card-title">Naruto</h5>
+                                <p>Episode</p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="card mb-3 bg-black" style="width: calc(20% - 1rem);">
+                        <a href="LINK NAAR JE PAGINA" class="text-decoration-none">
+                            <img src="https://imgsrv.crunchyroll.com/cdn-cgi/image/format=auto,fit=contain,width=480,height=720,quality=85/catalog/crunchyroll/e4e80c83c792d81c138e320874dbdffc.jpe"
+                                class="card-img-top" alt="...">
+                            <div class="card-body text-center text-white">
+                                <h5 class="card-title">Card title</h5>
+                                <p>Episode</p>
+                            </div>
+                        </a>
+                    </div>
+
+
+                    <div class="card mb-3 bg-black" style="width: calc(20% - 1rem);">
+                        <a href="LINK NAAR JE PAGINA" class="text-decoration-none">
+                            <img src="https://imgsrv.crunchyroll.com/cdn-cgi/image/format=auto,fit=contain,width=480,height=720,quality=85/catalog/crunchyroll/5e7f533c3b4f46244ca228af62e83dfa.jpe"
+                                class="card-img-top" alt="...">
+                            <div class="card-body text-center text-white">
+                                <h5 class="card-title">Card title</h5>
+                                <p>Episode</p>
+                            </div>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="card-wrapper container-sm d-flex justify-content-around">
+                    <div class="card mb-3 bg-black" style="width: calc(20% - 1rem);">
+                        <a href="LINK NAAR JE PAGINA" class="text-decoration-none">
+                            <img src="https://imgsrv.crunchyroll.com/cdn-cgi/image/format=auto,fit=contain,width=480,height=720,quality=85/catalog/crunchyroll/e108ae17d8d0407417cac40eb52d849a.jpe"
+                                class="card-img-top" alt="...">
+                            <div class="card-body text-center text-white">
+                                <h5 class="card-title">Black clover</h5>
+                                <p>Episode 12</p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="card mb-3 bg-black" style="width: calc(20% - 1rem);">
+                        <a href="LINK NAAR JE PAGINA" class="text-decoration-none">
+                            <img src="https://imgsrv.crunchyroll.com/cdn-cgi/image/format=auto,fit=contain,width=480,height=720,quality=85/catalog/crunchyroll/757bae5a21039bac6ebace5de9affcd8.jpe"
+                                class="card-img-top" alt="...">
+                            <div class="card-body text-center text-white">
+                                <h5 class="card-title">Card title</h5>
+                                <p>Episode</p>
+                            </div>
+                        </a>
+                    </div>
+
+
+                    <div class="card mb-3 bg-black" style="width: calc(20% - 1rem);">
+                        <a href="LINK NAAR JE PAGINA" class="text-decoration-none">
+                            <img src="https://imgsrv.crunchyroll.com/cdn-cgi/image/format=auto,fit=contain,width=480,height=720,quality=85/catalog/crunchyroll/01ec367b44f0a568430a957e042639af.jpe"
+                                class="card-img-top" alt="...">
+                            <div class="card-body text-center text-white">
+                                <h5 class="card-title">Naruto</h5>
+                                <p>Episode</p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="card mb-3 bg-black" style="width: calc(20% - 1rem);">
+                        <a href="LINK NAAR JE PAGINA" class="text-decoration-none">
+                            <img src="https://imgsrv.crunchyroll.com/cdn-cgi/image/format=auto,fit=contain,width=480,height=720,quality=85/catalog/crunchyroll/e4e80c83c792d81c138e320874dbdffc.jpe"
+                                class="card-img-top" alt="...">
+                            <div class="card-body text-center text-white">
+                                <h5 class="card-title">Card title</h5>
+                                <p>Episode</p>
+                            </div>
+                        </a>
+                    </div>
+
+
+                    <div class="card mb-3 bg-black" style="width: calc(20% - 1rem);">
+                        <a href="LINK NAAR JE PAGINA" class="text-decoration-none">
+                            <img src="https://imgsrv.crunchyroll.com/cdn-cgi/image/format=auto,fit=contain,width=480,height=720,quality=85/catalog/crunchyroll/5e7f533c3b4f46244ca228af62e83dfa.jpe"
+                                class="card-img-top" alt="...">
+                            <div class="card-body text-center text-white">
+                                <h5 class="card-title">Card title</h5>
+                                <p>Episode</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsThree"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControlsThree"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+
 
 
 
     <script src="/server/public/javascript/main."></script>
+
+
 </body>
 
 </html>
