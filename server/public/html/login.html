@@ -13,44 +13,51 @@
 </head>
 
 <body class="bg-dark m-0 p-0">
-    <div class="container-fluid bg-dark">
-        <div class="row">
-            <div class="col">
-
-            </div>
-            <div class="col-5">
-                <span class="text-danger fs-1">Watch</span>
-                <span class="text-white fs-1">Anime</span>
-            </div>
-            <div class="col-5 d-flex flex-direction-row justify-content-center align-items-center fs-6">
-                <a class="nav-link text-white" href="/index.html">Home</a>
-                &nbsp;&nbsp;&nbsp;&nbsp;
-                <a class="nav-link text-white" href="/html/search.html">Search</a>
-                &nbsp;&nbsp;&nbsp;&nbsp;
-                <div class="dropdown">
-                    <button class="btn btn-secondary bg-dark dropdown-toggle" type="button" data-bs-toggle="dropdown"
-                        aria-expanded="false">
-                        Login en Register
-                    </button>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">Login</a></li>
-                        <li><a class="dropdown-item" href="#">Register</a></li>
+    <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand text-danger" href="#">Watchanime</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon color-white"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active text-white" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#">Link</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-white" href="#" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Genre's
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Most populair</a></li>
+                                <li><a class="dropdown-item" href="#">Horror</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-white" href="#" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Login/Register
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Login</a></li>
+                                <li><a class="dropdown-item" href="#">Register</a></li>
+                            </ul>
+                        </li>
                     </ul>
                 </div>
-                <div class="dropdown">
-                    <button class="btn btn-secondary bg-dark dropdown-toggle" type="button" data-bs-toggle="dropdown"
-                        aria-expanded="false">
-                        Genre's
-                    </button>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">Action</a></li>
-                        <li><a class="dropdown-item" href="#">Horror</a></li>
-                        <li><a class="dropdown-item" href="#">Romance</a></li>
-                    </ul>
-                </div>
             </div>
-            <div class="col"></div>
-        </div>
+        </nav>
     </div>
 </body>
 
