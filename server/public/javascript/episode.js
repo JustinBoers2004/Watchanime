@@ -1,29 +1,5 @@
-console.log('main loaded');
-
-const container = document.querySelector('.containerEp');
-
-//function showcard
-function showCards(episodes) {
-    console.log(episodes);
-    
-    let htmlcode = '';
-    for (let i = 0; i < episodes.length; i++) {
-        const episode = episodes[i];
-        htmlcode += createCard(episode);
-
-    }
-    container.innerHTML = htmlcode;
-  }
-
-
-
-function createCard(episode) {
-    const cardHtml = `
-    <div class="card">
-        <p>${card.episode}</p>
-        <p>${card.name}</p>
-        <button class="btn btn-primary">Button</button>
-    </div>
-    `;
-    return cardHtml;
+function playVideo() {
+    // Vervang de dummy iframe met de video-iframe en speel de video af
+    var videoIframe = document.getElementById('video-player');
+    videoIframe.src = "//embtaku.pro/streaming.php?id=MTIxNzk0&title=Naruto+Shippuuden+%28Dub%29+Episode+500&typesub=SUB";
 }
