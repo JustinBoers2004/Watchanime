@@ -3,74 +3,43 @@ import dotenv from 'dotenv';
 import cors from 'cors';
 import { MongoClient, ServerApiVersion } from 'mongodb';
 
+const app = express();
 
-app.use(express.static('public'))
-app.use(cors());
-
-const app = express()
-const port = 3000
-const databaseUrl = process.env.CONNECTION_URL;
-
-const client = new MongoClient(databaseUrl, {
-
-    serverApi: {
-
-        version: ServerApiVersion.v1,
-
-        strict: true,
-
-        deprecationErrors: true,
-
-    }
-
+app.get('/episodes/:episodeName', (req, res) => {
+    console.log(req.params.episodeName);
+    fetchEpisodes(req.params.episodeName).then(episodes =>{
+        res.send(episodes);
+    });
+    
 });
 
-app.get('/episodecards', (req, res) => {
-
-    fetchepisodes().then(episode => {
-    
-    res.json(episode);
-    
+app.get('/episodes', (req, res) => {
+    fetchEpisodes().then(episodes =>{
+        res.send(episodes);
     });
     
-    });
+});
 
-
-
-async function fetchepisodes() {
-
+//this function returns all messages from the message collection in Mongodb
+async function fetchEpisodes(name) {
     try {
-    
-    // connect the client to the server
-    
-    await client.connect();
-    
-    //we connection with the test database
-    
-    const database = client.db("WatchAnime");
-    
-    //we connect with the cheese collection
-    
-    const collection = database.collection('NarutoEpisodes');
-    
-    //we fetch the cheeses from our database
-    
-    const cheeses = await collection.find().toArray();
-    
-    //finally we return the cheeses
-    
-    return cheeses;
-    
+        // connect the client to the server 
+        await client.connect();
+        //we connection with the dashboard database
+        const database = client.db('WatchAnime');
+        //we connect with the message collection
+        const collection = database.collection('JujutsuKaisenEpisodes');
+        //we fetch the messages from our database
+        let episodes;
+        if(name){
+            episodes = await collection.find({name: name}).toArray();
+        } else{
+            episodes = await collection.find().toArray();
+        }
+        //finally we return the cheeses
+        return episodes;
     } finally {
-    
-    // ensures that the client will close when you finish/error
-    
-    await client.close();
-    
+        // ensures that the client will close when you finish/error
+        await client.close();
     }
 }
-
-app.listen(port, () => {
-    console.log(`Example app listening on port ${port}`)
-  })
-  
