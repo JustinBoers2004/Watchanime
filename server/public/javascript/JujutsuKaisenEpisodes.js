@@ -1,25 +1,25 @@
 console.log('episode loaded');
 
 const episodeRow = document.querySelector('.episode-row');
+const episodeInfo = document.querySelector('.episode-info');
 
-
-fetch('/episodes')
+fetch('/JujustsuKaisenEpisodes')
     .then(data => data.json())
     .then(jsonData => showEpisodes(jsonData));
 
 
-function showEpisodes(episodes) {
-    console.log(episodes);
+function showEpisodes(JujustsuKaisenEpisodes) {
+    console.log(JujustsuKaisenEpisodes);
 
-    for (let i = 0; i < episodes.length; i++) {
-        const episode = episodes[i];
-        episodeRow.appendChild(createCard(episode));
+    for (let i = 0; i < JujustsuKaisenEpisodes.length; i++) {
+        const JujustsuKaisenEpisode = JujustsuKaisenEpisodes[i];
+        episodeRow.appendChild(createCard(JujustsuKaisenEpisode));
     }
 }
 
-function createCard(episode){
+function createCard(JujustsuKaisenEpisode){
     const col = document.createElement('div');
-    col.classList.add('col-12');
+    col.classList.add('col-md-4');
     const card = document.createElement('div');
     card.classList.add('card');
     const button = document.createElement('button');
@@ -27,7 +27,7 @@ function createCard(episode){
     button.textContent = episode.name;
 
     button.addEventListener('click', function(){
-        fillEpisodeInfoCard(episode);
+        fillEpisodeInfoCard(JujustsuKaisenEpisode);
     });
 
     col.appendChild(card);
@@ -36,7 +36,7 @@ function createCard(episode){
     return col;
 }
 
-function fillEpisodeInfoCard(episode){
+function fillEpisodeInfoCard(JujustsuKaisenEpisode){
 
     const card = `
         <div class="card">
