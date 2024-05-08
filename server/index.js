@@ -38,12 +38,12 @@ async function fetchEpisodes(name) {
         //we connection with the dashboard database
         const database = client.db('WatchAnime');
         //we connect with the message collection
-        const collection = database.collection('JujutsuKaisenEpisodes');
+        const collection = database.collection('JujustsuKaisenEpisodes');
         //we fetch the messages from our database
         let episodes;
-        if (name) {
-            episodes = await collection.find({ name: name }).toArray();
-        } else {
+        if(name){
+            episodes = await collection.find({name: name}).toArray();
+        } else{
             episodes = await collection.find().toArray();
         }
         //finally we return the cheeses

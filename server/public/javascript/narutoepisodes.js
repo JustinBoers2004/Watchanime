@@ -15,17 +15,17 @@ function createButtons() {
     const buttonContainer10 = document.getElementById('buttonContainerThen'); // Container voor de resterende afleveringen
     const buttonContainer11 = document.getElementById('buttonContainerEleven'); // Container voor de eerste 100 afleveringen
     const buttonContainer12 = document.getElementById('buttonContainerTwelve'); // Container voor de resterende afleveringen
-    const buttonContainer13 = document.getElementById('buttonContainerThirteen'); // Container voor de resterende afleveringen
-    const buttonContainer14 = document.getElementById('buttonContainerFourteen'); // Container voor de resterende afleveringen
-    const buttonContainer15 = document.getElementById('buttonContainerFifteen'); // Container voor de resterende afleveringen
-    const buttonContainer16 = document.getElementById('buttonContainerSixteen'); // Container voor de eerste 100 afleveringen
-    const buttonContainer17 = document.getElementById('buttonContainerSeventeen'); // Container voor de resterende afleveringen
-    const buttonContainer18 = document.getElementById('buttonContainerEighteen'); // Container voor de resterende afleveringen
-    const buttonContainer19 = document.getElementById('buttonContainerNineteen'); // Container voor de resterende afleveringen
-    const buttonContainer20 = document.getElementById('buttonContainerTwenty'); // Container voor de resterende afleveringen
-    const buttonContainer21 = document.getElementById('buttonContainerTwentyone'); // Container voor de eerste 100 afleveringen
-    const buttonContainer22 = document.getElementById('buttonContainerTwentytwo'); // Container voor de resterende afleveringen
-    const buttonContainer23 = document.getElementById('buttonContainerTwentythree'); // Container voor de resterende afleveringen
+    const buttonContainer13 = document.getElementById('buttonContainerThirteen'); 
+    const buttonContainer14 = document.getElementById('buttonContainerFourteen'); 
+    const buttonContainer15 = document.getElementById('buttonContainerFifteen'); 
+    const buttonContainer16 = document.getElementById('buttonContainerSixteen'); 
+    const buttonContainer17 = document.getElementById('buttonContainerSeventeen'); 
+    const buttonContainer18 = document.getElementById('buttonContainerEighteen'); 
+    const buttonContainer19 = document.getElementById('buttonContainerNineteen'); 
+    const buttonContainer20 = document.getElementById('buttonContainerTwenty'); 
+    const buttonContainer21 = document.getElementById('buttonContainerTwentyone'); 
+    const buttonContainer22 = document.getElementById('buttonContainerTwentytwo'); 
+    const buttonContainer23 = document.getElementById('buttonContainerTwentythree'); 
 
     for (let i = 1; i <= numEpisodes; i++) {
         const button = document.createElement('button');
