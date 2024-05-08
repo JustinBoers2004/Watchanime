@@ -1,23 +1,33 @@
 import express from 'express';
-import dotenv from 'dotenv';
-import cors from 'cors';
-import { MongoClient, ServerApiVersion } from 'mongodb';
 
-const app = express();
+const app = express()
+const port = 3000
 
+app.use(express.static('public'))
+
+app.get('/', (req, res) => {
+    res.send('Hello World!')
+})
+
+app.listen(port, () => {
+    console.log(`Example app listening on port ${port}`)
+})
+
+
+//working with the episode's but it doesn't work
 app.get('/episodes/:episodeName', (req, res) => {
     console.log(req.params.episodeName);
-    fetchEpisodes(req.params.episodeName).then(episodes =>{
+    fetchEpisodes(req.params.episodeName).then(episodes => {
         res.send(episodes);
     });
-    
+
 });
 
 app.get('/episodes', (req, res) => {
-    fetchEpisodes().then(episodes =>{
+    fetchEpisodes().then(episodes => {
         res.send(episodes);
     });
-    
+
 });
 
 //this function returns all messages from the message collection in Mongodb
@@ -31,9 +41,9 @@ async function fetchEpisodes(name) {
         const collection = database.collection('JujutsuKaisenEpisodes');
         //we fetch the messages from our database
         let episodes;
-        if(name){
-            episodes = await collection.find({name: name}).toArray();
-        } else{
+        if (name) {
+            episodes = await collection.find({ name: name }).toArray();
+        } else {
             episodes = await collection.find().toArray();
         }
         //finally we return the cheeses

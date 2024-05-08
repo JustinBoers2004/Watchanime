@@ -3,21 +3,21 @@ console.log('episode loaded');
 const episodeRow = document.querySelector('.episode-row');
 const episodeInfo = document.querySelector('.episode-info');
 
-fetch('/JujustsuKaisenEpisodes')
+fetch('/episodes')
     .then(data => data.json())
     .then(jsonData => showEpisodes(jsonData));
 
 
-function showEpisodes(JujustsuKaisenEpisodes) {
-    console.log(JujustsuKaisenEpisodes);
+function showEpisodes(episodes) {
+    console.log(episodes);
 
-    for (let i = 0; i < JujustsuKaisenEpisodes.length; i++) {
-        const JujustsuKaisenEpisode = JujustsuKaisenEpisodes[i];
+    for (let i = 0; i < episodes.length; i++) {
+        const episode = episodes[i];
         episodeRow.appendChild(createCard(JujustsuKaisenEpisode));
     }
 }
 
-function createCard(JujustsuKaisenEpisode){
+function createCard(episode){
     const col = document.createElement('div');
     col.classList.add('col-md-4');
     const card = document.createElement('div');
@@ -27,7 +27,7 @@ function createCard(JujustsuKaisenEpisode){
     button.textContent = episode.name;
 
     button.addEventListener('click', function(){
-        fillEpisodeInfoCard(JujustsuKaisenEpisode);
+        fillEpisodeInfoCard(episode);
     });
 
     col.appendChild(card);
@@ -36,15 +36,14 @@ function createCard(JujustsuKaisenEpisode){
     return col;
 }
 
-function fillEpisodeInfoCard(JujustsuKaisenEpisode){
+function fillEpisodeInfoCard(episode){
 
     const card = `
         <div class="card">
-            <h2>${Name}</h2>
-            ${VideoUrl}
-            <h2>${title}</h2>
-            <p>${Description}</p>
-        
+            <h2>${episode.Name}</h2>
+            <iframe width="560" height="315" src="${episode.VideoUrl}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <h2>${episode.title}</h2>
+            <p>${episode.Description}</p>
         </div>`;
 
     episodeInfo.innerHTML = card;
