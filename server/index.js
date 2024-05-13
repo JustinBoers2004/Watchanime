@@ -15,17 +15,17 @@ app.listen(port, () => {
 
 
 //working with the episode's but it doesn't work
-app.get('/episodes/:episodeName', (req, res) => {
-    console.log(req.params.episodeName);
+app.get('/episodes/:episodeTitle', (req, res) => {
+    console.log(req.params.episodeTitle);
     fetchEpisodes(req.params.episodeName).then(episodes => {
-        res.send(episodes);
+        res.json(episodes);
     });
 
 });
 
 app.get('/episodes', (req, res) => {
     fetchEpisodes().then(episodes => {
-        res.send(episodes);
+        res.json(episodes);
     });
 
 });

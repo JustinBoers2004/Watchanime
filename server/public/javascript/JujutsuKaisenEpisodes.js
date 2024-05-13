@@ -8,14 +8,14 @@ fetch('/episodes')
     .then(jsonData => showEpisodes(jsonData));
 
 
-function showEpisodes(episodes) {
-    console.log(episodes);
-
-    for (let i = 0; i < episodes.length; i++) {
-        const episode = episodes[i];
-        episodeRow.appendChild(createCard(JujustsuKaisenEpisode));
+    function showEpisodes(episodes) {
+        console.log(episodes);
+    
+        for (let i = 0; i < episodes.length; i++) {
+            const episode = episodes[i];
+            episodeRow.appendChild(createCard(episode));
+        }
     }
-}
 
 function createCard(episode){
     const col = document.createElement('div');
