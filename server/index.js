@@ -1,18 +1,14 @@
 import express from 'express';
+import {} from 'dotenv/config';
+import { MongoClient } from 'mongodb';
 
-const app = express()
-const port = 3000
+const app = express();
+const port = 3000;
+
+const databaseUrl = process.env.CONNECTION_URL;
+const client = new MongoClient(databaseUrl);
 
 app.use(express.static('public'))
-
-app.get('/', (req, res) => {
-    res.send('Hello World!')
-})
-
-app.listen(port, () => {
-    console.log(`Example app listening on port ${port}`)
-})
-
 
 //working with the episode's but it doesn't work
 app.get('/episodes/:episodeTitle', (req, res) => {
@@ -29,6 +25,10 @@ app.get('/episodes', (req, res) => {
     });
 
 });
+
+app.listen(port, () => {
+    console.log(`Example app listening on port ${port}`)
+})
 
 //this function returns all messages from the message collection in Mongodb
 async function fetchEpisodes(name) {
