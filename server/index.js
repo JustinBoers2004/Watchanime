@@ -4,52 +4,41 @@ import { MongoClient } from 'mongodb';
 
 const app = express();
 const port = 3000;
-
+//lees de connection string uit de environment file
 const databaseUrl = process.env.CONNECTION_URL;
 const client = new MongoClient(databaseUrl);
 
 app.use(express.static('public'))
 
-//working with the episode's but it doesn't work
-app.get('/episodes/:episodeTitle', (req, res) => {
-    console.log(req.params.episodeTitle);
-    fetchEpisodes(req.params.episodeName).then(episodes => {
-        res.json(episodes);
-    });
-
-});
-
-app.get('/episodes', (req, res) => {
-    fetchEpisodes().then(episodes => {
-        res.json(episodes);
-    });
-
-});
 
 app.listen(port, () => {
-    console.log(`Example app listening on port ${port}`)
-})
+    console.log(`Example app listening on port ${port}`);
+});
 
-//this function returns all messages from the message collection in Mongodb
-async function fetchEpisodes(name) {
+//Deze functie haalt de data van jujutsukaisen io
+async function fetchjujutsukaisenepisodes() {
     try {
-        // connect the client to the server 
+        // we verbinden de client met de server
         await client.connect();
-        //we connection with the dashboard database
+        //hier verbinden we met de database, je moet nog wel een naam invullen
         const database = client.db('WatchAnime');
-        //we connect with the message collection
+        //hier verbinden we met de collectie, je moet nog wel een naam invullen
         const collection = database.collection('JujustsuKaisenEpisodes');
-        //we fetch the messages from our database
-        let episodes;
-        if(name){
-            episodes = await collection.find({name: name}).toArray();
-        } else{
-            episodes = await collection.find().toArray();
-        }
-        //finally we return the cheeses
-        return episodes;
+        //hier halen we de documenten uit de collectie in de vorm van een array
+        const jjkepisodes = await collection.find().toArray();
+        //uiteindelijk geven we de documenten terug
+        return jjkepisodes;
     } finally {
-        // ensures that the client will close when you finish/error
+        //we zorgen ervoor dat aan het einde de database verbinding weer wordt gesloten
         await client.close();
     }
 }
+
+app.get('/JujustsuKaisenEpisodes', (req, res) => {
+    //fetchDocuments() is een async functie dus zullen we met then() moeten werken
+    fetchjujutsukaisenepisodes().then(jjkepisodes => {
+        //in de then() geven we de documenten terug naar de browser in de vorm van json
+        res.json(jjkepisodes);
+    });
+});
+
