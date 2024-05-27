@@ -19,7 +19,7 @@ function showEpisodes(episodes) {
 
 function createCard(episode) {
     const col = document.createElement('div');
-    col.classList.add('col-md-1');
+    col.classList.add('col-md-2');
     const card = document.createElement('div');
     card.classList.add('card');
     const button = document.createElement('button');
