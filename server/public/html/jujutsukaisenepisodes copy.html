@@ -20,15 +20,15 @@
         <nav class="navbar navbar-expand-lg bg-dark">
             <div class="container-fluid">
                 <a class="navbar-brand text-danger" href="#">Watchanime</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                <button class="navbar-toggler text-white" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon color-white"></span>
+                    <span class="navbar-toggler-icon text-white"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link active text-white" aria-current="page" href="#">Home</a>
+                            <a class="nav-link active text-white" aria-current="page" href="/index.html">Home</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-white" href="#">Link</a>
@@ -38,12 +38,13 @@
                                 data-bs-toggle="dropdown" aria-expanded="false">
                                 Genre's
                             </a>
-                            <ul class="dropdown-menu bg-dark">
-                                <button class="btn btn-primary bg-dark text-white border-none border-0" onclick="window.location.href='most_popular.html'">Most populair</button>
-                                <br>
-                                <button class="btn btn-primary bg-dark text-white border-none border-0" onclick="window.location.href='sport.html'">Sport</button>
-                                <br>
-                                <button class="btn btn-primary bg-dark text-white border-none border-0" onclick="window.location.href='action.html'">Action</button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Most populair</a></li>
+                                <li><a class="dropdown-item" href="#">Horror</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Action</a></li>
                             </ul>
                         </li>
                         <li class="nav-item dropdown">
@@ -51,10 +52,9 @@
                                 data-bs-toggle="dropdown" aria-expanded="false">
                                 Login/Register
                             </a>
-                            <ul class="dropdown-menu bg-dark">
-                                <button class="btn btn-primary bg-dark text-white border-none border-0" onclick="window.location.href='sport.html'">Login</button>
-                                <br>
-                                <button class="btn btn-primary bg-dark text-white border-none border-0" onclick="window.location.href='action.html'">Register</button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Login</a></li>
+                                <li><a class="dropdown-item" href="#">Register</a></li>
                             </ul>
                         </li>
                     </ul>
@@ -62,7 +62,7 @@
             </div>
         </nav>
     </div>
-
+    </div>
 
     <div class="container-fluid position-relative">
         <div class="row">
@@ -117,12 +117,12 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-12 text-center g-3">
-                <button class="btn btn-primary" onclick="scrollToSection('section1')">Fearsome Womb Arc (1-8)</button>
-                <button class="btn btn-primary" onclick="scrollToSection('section2')">Vs. Mahito Arc (9-13)</button>
-                <button class="btn btn-primary" onclick="scrollToSection('section3')">Kyoto Goodwill Event Arc (14-21)</button>
-                <button class="btn btn-primary" onclick="scrollToSection('section4')">Death Painting Arc (22-24)</button>
-                <button class="btn btn-primary" onclick="scrollToSection('section5')">Hidden Inventory Arc (25-29)</button>
-                <button class="btn btn-primary" onclick="scrollToSection('section6')">Shibuya incident Arc (30-Onward)</button>
+                <button class="btn btn-primary" onclick="scrollToSection('section1')">Go to Section 1</button>
+                <button class="btn btn-primary" onclick="scrollToSection('section2')">Go to Section 2</button>
+                <button class="btn btn-primary" onclick="scrollToSection('section3')">Go to Section 3</button>
+                <button class="btn btn-primary" onclick="scrollToSection('section4')">Go to Section 4</button>
+                <button type="button" class="btn bg-dark text-white rounded-pill btn-outline-light button-arcs">Hidden Inventory Arc (25-29)</button>
+                <button type="button" class="btn bg-dark text-white rounded-pill btn-outline-light button-arcs">Shibuya incident Arc (30-Onward)</button>
             </div>
         </div>
     </div>
@@ -139,16 +139,6 @@
             </div>
         </div>
     </section>
-
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-12">
-                <div class="row episode-row1">
-
-                </div>           
-            </div>
-        </div>
-    </div>
 
     <div class="container">
         <div class="row p-5">
@@ -167,16 +157,6 @@
         </div>
     </section>
 
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-12">
-                <div class="row episode-row2">
-
-                </div>           
-            </div>
-        </div>
-    </div>
-
     <div class="container">
         <div class="row p-5">
             <div class="col-12">
@@ -193,16 +173,6 @@
             </div>
         </div>
     </section>
-
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-12">
-                <div class="row episode-row3">
-
-                </div>           
-            </div>
-        </div>
-    </div>
 
     <div class="container">
         <div class="row p-5">
@@ -221,71 +191,31 @@
         </div>
     </section>
 
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-12">
-                <div class="row episode-row4">
 
-                </div>           
-            </div>
-        </div>
-    </div>
 
-    <div class="container">
-        <div class="row p-5">
-            <div class="col-12">
-            </div>
-        </div>
-    </div>
 
-    <section id="section5" class="section">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <h2 class="text-white text-center text-decoration-underline">Hidden Inventory Arc (25-29)</h2>
-                </div>
-            </div>
-        </div>
-    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     <div class="container-fluid">
-        <div class="row">
-            <div class="col-12">
-                <div class="row episode-row5">
-
-                </div>           
-            </div>
-        </div>
-    </div>
-
-    <div class="container">
-        <div class="row p-5">
-            <div class="col-12">
-            </div>
-        </div>
-    </div>
-
-    <section id="section6" class="section">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <h2 class="text-white text-center text-decoration-underline">Shibuya incident Arc (30-Onward)</h2>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-12">
-                <div class="row episode-row6">
-
-                </div>           
-            </div>
-        </div>
-    </div>
-
-    <!-- <div class="container-fluid">
         <div class="row">
             <div class="col-12">
                 <div class="row episode-row">
@@ -295,7 +225,7 @@
         </div>
     </div>
 
-    <br> -->
+    <br>
 
     <div class="container-fluid">
         <div class="row">
@@ -308,12 +238,10 @@
         </div>
     </div>
 
-    <div class="container">
-        <div class="row p-5">
-            <div class="col-12">
-            </div>
-        </div>
-    </div>
+    <br>
+    <br>
+    <br>
+
 
     <div class="container-fluid">
         <div class="row">

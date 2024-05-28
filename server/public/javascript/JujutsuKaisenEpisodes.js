@@ -1,42 +1,19 @@
 console.log('episode loaded');
 
-const episodeRowOne = document.querySelector('.episode-row1');
-const episodeRowTwo = document.querySelector('.episode-row2');
-const episodeRowThree = document.querySelector('.episode-row3');
-const episodeRowFour = document.querySelector('.episode-row4');
-const episodeRowVife = document.querySelector('.episode-row5');
-const episodeRowSix = document.querySelector('.episode-row6');
-
-
+const episodeRow = document.querySelector('.episode-row');
 const episodeInfo = document.querySelector('.episode-info');
 
-//fetch data
+
 fetch('/JujustsuKaisenEpisodes')
     .then(myData => myData.json())
     .then(jsonData => showEpisodes(jsonData));
 
-
-
-//function to show episodes
 function showEpisodes(episodes) {
     console.log(episodes);
 
     for (let i = 0; i < episodes.length; i++) {
         const episode = episodes[i];
-        if (episode < 9) {
-            episodeRowOne.appendChild(createCard(episode));
-        } else if (episode < 14){
-            episodeRowTwo.appendChild(createCard(episode));
-        } else if (episode < 22){
-            episodeRowThree.appendChild(createCard(episode));
-        } else if (episode < 25){
-            episodeRowFour.appendChild(createCard(episode));
-        } else if (episode < 30){
-            episodeRowVife.appendChild(createCard(episode));
-        } else {
-            episodeRowSix.appendChild(createCard(episode));
-        }
-
+        episodeRow.appendChild(createCard(episode));
     }
 }
 
@@ -66,6 +43,7 @@ function fillEpisodeInfoCard(episode) {
             <h2>${episode.Title}</h2>
             <br>
             <iframe src="${episode.VideoUrl}" frameborder="0"  class="video" allowfullscreen></iframe>
+            <br>
             <h3>${episode.Description}</h3>
             </div>
         </div>`;
