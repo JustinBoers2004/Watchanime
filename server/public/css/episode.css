@@ -6,7 +6,6 @@
     background-color: #262626;
     color: white;
     border: none;
-    height: 500px;
 }
 
 .tekst{
@@ -29,5 +28,13 @@
     background-color: #dc3545; /* Pas de achtergrondkleur aan naar de gewenste kleur */
     color: #fff; /* Pas de tekstkleur aan naar de gewenste kleur */
     border-color: white;
+}
+
+.button{
+    justify-content: center;
+}
+
+.video{
+    height: 1000px;
 }
 

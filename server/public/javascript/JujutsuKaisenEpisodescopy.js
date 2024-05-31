@@ -12,7 +12,6 @@ const episodeInfo = document.querySelector('.episode-info');
 fetch('/JujustsuKaisenEpisodes')
     .then(response => response.json())
     .then(data => showEpisodes(data))
-    .catch(error => console.error('Error fetching episodes:', error));
  
 function showEpisodes(episodes) {
     console.log(episodes);
@@ -42,7 +41,7 @@ function createCard(episode) {
     const card = document.createElement('div');
     card.classList.add('card');
     const button = document.createElement('button');
-    button.classList.add('btn', 'btn-primary');
+    button.classList.add('btn', 'btn-primary', );
     button.textContent = episode.ButtonText;
  
     button.addEventListener('click', function () {
