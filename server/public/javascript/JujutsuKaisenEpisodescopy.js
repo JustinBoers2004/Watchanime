@@ -60,7 +60,6 @@ function fillEpisodeInfoCard(episode) {
             <h2>${episode.Title}</h2>
             <br>
             <iframe src="${episode.VideoUrl}" frameborder="0" class="video" allowfullscreen></iframe>
-            <br>
             <h3>${episode.Description}</h3>
         </div>`;
  
