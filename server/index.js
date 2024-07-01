@@ -42,3 +42,29 @@ app.get('/JujustsuKaisenEpisodes', (req, res) => {
     });
 });
 
+//Deze functie haalt de data van jujutsukaisen io
+async function fetchjujutsuNarutoShippuden() {
+    try {
+        // we verbinden de client met de server
+        await client.connect();
+        //hier verbinden we met de database, je moet nog wel een naam invullen
+        const database = client.db('WatchAnime');
+        //hier verbinden we met de collectie, je moet nog wel een naam invullen
+        const collection = database.collection('NarutoShippudenEpisodes');
+        //hier halen we de documenten uit de collectie in de vorm van een array
+        const NarutoShippudenEpisodes = await collection.find().toArray();
+        //uiteindelijk geven we de documenten terug
+        return NarutoShippudenEpisodes;
+    } finally {
+        //we zorgen ervoor dat aan het einde de database verbinding weer wordt gesloten
+        await client.close();
+    }
+}
+
+app.get('/NarutoShippudenEpisodes', (req, res) => {
+    //fetchDocuments() is een async functie dus zullen we met then() moeten werken
+    fetchjujutsuNarutoShippuden().then(NarutoShippudenEpisodes => {
+        //in de then() geven we de documenten terug naar de browser in de vorm van json
+        res.json(NarutoShippudenEpisodes);
+    });
+});
